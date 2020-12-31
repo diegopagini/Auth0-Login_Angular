@@ -14,6 +14,24 @@
       <li routerLink="home" routerLinkActive="active">Home</li>
       <li routerLink="prices" routerLinkActive="active">Precios</li>
       <li routerLink="protected" routerLinkActive="active">Protected</li>
+      <li>
+        <button
+          (click)="auth.loginWithRedirect()"
+          mat-raised-button
+          color="primary"
+        >
+          Ingresar
+        </button>
+      </li>
+      <li *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+        <button
+          (click)="auth.logout({ returnTo: document.location.origin })"
+          mat-raised-button
+          color="warn"
+        >
+          Salir
+        </button>
+      </li>
     </ul>
   </div>
 </mat-toolbar>

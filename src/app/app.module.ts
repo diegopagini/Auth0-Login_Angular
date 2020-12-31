@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProtectedComponent } from './components/protected/protected.component';
 import { PricesComponent } from './components/prices/prices.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { AuthModule } from '@auth0/auth0-angular';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatIconModule,
     MatButtonModule,
     MatExpansionModule,
+    AuthModule.forRoot({
+      domain: 'dev-0ktxdvs1.us.auth0.com',
+      clientId: 'vwgsezyeBvjsadO1Pzx1rO5cUnMCX0uV',
+    }),
   ],
   exports: [
     MatToolbarModule,
