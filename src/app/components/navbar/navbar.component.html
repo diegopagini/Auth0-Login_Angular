@@ -23,7 +23,7 @@
           Ingresar
         </button>
       </li>
-      <li *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+      <li *ngIf="auth.isAuthenticated$ | async">
         <button
           (click)="auth.logout({ returnTo: document.location.origin })"
           mat-raised-button
