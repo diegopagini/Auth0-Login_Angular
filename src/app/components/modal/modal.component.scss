@@ -1,0 +1,34 @@
+.modal {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: #000000;
+  ul {
+    margin-top: 60px;
+    color: #fff;
+    line-height: 20px;
+    li {
+      padding-left: 20px;
+      font-size: 30px;
+      margin-top: 20px;
+      list-style: none;
+    }
+  }
+}
+
+.action-container {
+  height: 60px;
+  padding-top: 20px;
+  .title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .menu-item {
+    font-weight: 700;
+    color: #fff;
+  }
+}

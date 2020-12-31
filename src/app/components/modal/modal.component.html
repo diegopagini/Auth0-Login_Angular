@@ -1,1 +1,29 @@
-<p>modal works!</p>
+<div class="modal">
+  <div class="action-container">
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+      class="menu-item"
+      (click)="closeDialog()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title"><strong>Auth0</strong> App</span>
+  </div>
+  <ul>
+    <li routerLink="home" routerLinkActive="active" (click)="closeDialog()">
+      Home
+    </li>
+    <li routerLink="prices" routerLinkActive="active" (click)="closeDialog()">
+      Precios
+    </li>
+    <li
+      routerLink="protected"
+      routerLinkActive="active"
+      (click)="closeDialog()"
+    >
+      Protected
+    </li>
+  </ul>
+</div>

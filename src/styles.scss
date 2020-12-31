@@ -77,3 +77,12 @@ body {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
+
+mat-dialog-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}

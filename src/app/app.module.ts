@@ -13,9 +13,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
 import { ProtectedComponent } from './components/protected/protected.component';
 import { PricesComponent } from './components/prices/prices.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ModalComponent, HomeComponent, ProtectedComponent, PricesComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    ModalComponent,
+    HomeComponent,
+    ProtectedComponent,
+    PricesComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,8 +32,15 @@ import { PricesComponent } from './components/prices/prices.component';
     MatDialogModule,
     MatIconModule,
     MatButtonModule,
+    MatExpansionModule,
   ],
-  exports: [MatToolbarModule, MatDialogModule, MatIconModule, MatButtonModule],
+  exports: [
+    MatToolbarModule,
+    MatDialogModule,
+    MatIconModule,
+    MatButtonModule,
+    MatExpansionModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

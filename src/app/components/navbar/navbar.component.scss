@@ -9,12 +9,12 @@
 }
 
 mat-icon {
-  visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 600px) {
   mat-icon {
-    visibility: visible;
+    display: block;
   }
   .ul {
     li {
