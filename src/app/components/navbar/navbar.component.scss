@@ -1,0 +1,24 @@
+.ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  li {
+    list-style: none;
+    margin-left: 15px;
+  }
+}
+
+mat-icon {
+  visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  mat-icon {
+    visibility: visible;
+  }
+  .ul {
+    li {
+      visibility: hidden;
+    }
+  }
+}

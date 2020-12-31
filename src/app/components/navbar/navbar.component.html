@@ -1,0 +1,18 @@
+<mat-toolbar class="header animated fadeIn">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    class="menu-item"
+    (click)="openDialog()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="link title">Auth0 App</span>
+  <div class="navigation-container">
+    <ul class="ul">
+      <li routerLink="home">Home</li>
+      <li routerLink="prices">Precios</li>
+    </ul>
+  </div>
+</mat-toolbar>
