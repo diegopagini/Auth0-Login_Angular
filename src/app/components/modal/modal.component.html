@@ -22,14 +22,27 @@
       routerLink="protected"
       routerLinkActive="active"
       (click)="closeDialog()"
+      *ngIf="auth.isAuthenticated$ | async"
     >
       Protected
     </li>
     <li>
-      <button mat-raised-button color="primary">Ingresar</button>
+      <button
+        (click)="auth.loginWithRedirect()"
+        mat-raised-button
+        color="primary"
+      >
+        Ingresar
+      </button>
     </li>
-    <li>
-      <button mat-raised-button color="warn">Salir</button>
+    <li *ngIf="auth.isAuthenticated$ | async">
+      <button
+        (click)="auth.logout({ returnTo: document.location.origin })"
+        mat-raised-button
+        color="warn"
+      >
+        Salir
+      </button>
     </li>
   </ul>
 </div>

@@ -13,7 +13,13 @@
     <ul class="ul">
       <li routerLink="home" routerLinkActive="active">Home</li>
       <li routerLink="prices" routerLinkActive="active">Precios</li>
-      <li routerLink="protected" routerLinkActive="active">Protected</li>
+      <li
+        routerLink="protected"
+        routerLinkActive="active"
+        *ngIf="auth.isAuthenticated$ | async"
+      >
+        Protected
+      </li>
       <li>
         <button
           (click)="auth.loginWithRedirect()"
